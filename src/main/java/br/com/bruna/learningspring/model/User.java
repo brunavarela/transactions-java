@@ -94,4 +94,19 @@ public class User {
     public void setBalance(float balance) {
         this.balance = balance;
     }
+
+//    Sobrescrever o método toString pra essa classe
+//    pra quando acessar esse método receber um output melhor
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", cpf='" + cpf + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", type='" + type + '\'' +
+                ", balance=" + balance +
+                '}';
+    }
 }

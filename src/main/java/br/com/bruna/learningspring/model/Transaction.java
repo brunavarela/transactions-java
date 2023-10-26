@@ -77,4 +77,15 @@ public class Transaction {
     public void setDate(Date date) {
         this.date = date;
     }
+
+    @Override
+    public String toString() {
+        return "Transaction{" +
+                "id=" + id +
+                ", payer=" + payer +
+                ", payee=" + payee +
+                ", value=" + value +
+                ", date=" + date +
+                '}';
+    }
 }
